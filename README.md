@@ -81,8 +81,18 @@ kubectl config current-context
 
 Para realizar un despliegue y/o actualización en el cluster kubernetes se requiere 2 cosas:
 
-A.- El binario de kubernetes:
+1. El binario de kubernetes
+
+```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+```
+
+2. El archivo "HOME/.kube/config"
+```
+mv kubectl_config $HOME/.kube/config
+```
+
+
 
 
 B.- El archivo "HOME/.kube/config" que puede ser único por cluster o tener varios únicos por cluster.
