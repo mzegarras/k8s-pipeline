@@ -54,11 +54,18 @@ clusters:
   name: site2-prd
 ```
 
-- Para visualizar la lista clusters:
-kubectl config get-clusters
+* Visualizar la lista clusters: 
 
-- Para visualizar la lista context:
+```
+kubectl config get-clusters
+```
+
+* Visualizar la lista context: 
+
+```
 kubectl config get-contexts
+```
+
 
 - Para asignar el context de trabajo podemos user:
 
