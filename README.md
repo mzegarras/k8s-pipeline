@@ -77,6 +77,7 @@ kubectl config current-context
 ```
 
 
+### Desplegando cambios en kubernetes ###
 
 Para realizar un despliegue y/o actualización en el cluster kubernetes se requiere 2 cosas:
 
