@@ -1,6 +1,6 @@
 # k8s-pipeline
 
-### Credenciales del cluster kubernetes en azure y google cloud ###
+### Credenciales del cluster kubernetes en azure y google cloud: ###
 
 * En azure:
 ```
@@ -11,11 +11,13 @@ az acs kubernetes get-credentials --name --resource-group [--file] [--ssh-key-fi
 gcloud container clusters get-credentials NAME [--zone=ZONE, -z ZONE] [GCLOUD_WIDE_FLAG …]
 ```
 
+### Revisando configuraciones de kubernetes ###
 
 Ambas líneas actualizan el archivo HOME/.kube/config con las credenciales y parámetros necesarios para conectarse al cluster kubernetes. 
 
 Para revisar la configuración: kubectl config view
 
+```json
 apiVersion: v1
 clusters:
 - cluster:
@@ -46,7 +48,7 @@ clusters:
     namespace: production
     user: site2_mgmt-admin
   name: site2-prd
-
+```
 
 - Para visualizar la lista clusters:
 kubectl config get-clusters
