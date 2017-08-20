@@ -66,14 +66,15 @@ kubectl config get-clusters
 kubectl config get-contexts
 ```
 
-
-- Para asignar el context de trabajo podemos user:
-
+* Cambiar el contexto de trabajo
+```
 kubectl config set-context [NOMBRE DEL CONTEXT]
+```
 
-- Para consultar el context actual puede utilizar:
-
+* Visualizar el contexto de trabajo actual
+```
 kubectl config current-context
+```
 
 
 
