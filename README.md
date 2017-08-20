@@ -15,7 +15,11 @@ gcloud container clusters get-credentials NAME [--zone=ZONE, -z ZONE] [GCLOUD_WI
 
 Ambas líneas actualizan el archivo HOME/.kube/config con las credenciales y parámetros necesarios para conectarse al cluster kubernetes. 
 
-Para revisar la configuración: kubectl config view
+* Para revisar la configuración: 
+
+```
+kubectl config view
+```
 
 ```json
 apiVersion: v1
