@@ -1,0 +1,20 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: 
+    server: https://demo1.eastus.cloudapp.azure.com
+  name: demo1mgmt
+contexts:
+- context:
+    cluster: demo1mgmt
+    namespace: development
+    user: demo1mgmt-admin
+  name: dev
+current-context: demo1mgmt
+kind: Config
+preferences: {}
+users:
+- name: demo1mgmt-admin
+  user:
+    client-certificate-data:
+    client-key-data: 
