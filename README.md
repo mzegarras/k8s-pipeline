@@ -112,7 +112,7 @@ pipelines:
     - step:
         caches:
           - maven
-        script: # Modify the commands below to build your repository.
+        script: # Modificar los comandos
           - cd ./msclienttest
           - mvn clean package
           - cd ..
@@ -120,7 +120,7 @@ pipelines:
           - docker tag msclientetest:$BITBUCKET_BUILD_NUMBER ebizacr.azurecr.io/msclientetest:$BITBUCKET_BUILD_NUMBER
           - docker login $CONTAINER_REPO_URL -u $CONTAINER_REPO_USER -p $CONTAINER_REPO_PWD
           - docker push $CONTAINER_REPO_URL/msclientetest:$BITBUCKET_BUILD_NUMBER
-           # Download the necessary tools to deploy to kubernetes
+           # Descargar kubernetes
           - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
           - chmod +x ./kubectl
           - mv ./kubectl /usr/local/bin/kubectl
