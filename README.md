@@ -98,10 +98,10 @@ mv kubectl_config $HOME/.kube/config
 B.- El archivo "HOME/.kube/config" que puede ser único por cluster o tener varios únicos por cluster.
 
 
-https://mzegarra@bitbucket.org/mzegarra/k8s-pipeline.git
 
-Pipeline azure:
 
+* Pipeline azure:
+```yml
 image: maven:3.3.9
 pipelines:
   default:
@@ -126,8 +126,4 @@ pipelines:
           - kubectl set image deployments/msclientetest msclientetest=$CONTAINER_REPO_URL/msclientetest:$BITBUCKET_BUILD_NUMBER
 options:
  docker: true
-
-
-
-
-git clone https://mzegarra@bitbucket.org/mzegarra/k8s-pipeline.git
+```
