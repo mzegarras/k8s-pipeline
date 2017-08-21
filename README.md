@@ -99,9 +99,9 @@ B.- El archivo "HOME/.kube/config" que puede ser único por cluster o tener vari
 
 
 
-## Variables para pipeline:
+## Pipeline bitbucket:
 * CONTAINER_REPO_PWD : TU_USER_CONTAINER
-*CONTAINER_REPO_URL : mirepocontainer.azurecr.io
+* CONTAINER_REPO_URL : mirepocontainer.azurecr.io
 * CONTAINER_REPO_USER : TU_PASSWORD_CONTAINER
 
 * Pipeline azure:
