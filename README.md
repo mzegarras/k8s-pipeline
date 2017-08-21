@@ -1,6 +1,6 @@
 # Desplegando en kubernetes (azure / google cloud)
 
-### Credenciales del cluster kubernetes en azure y google cloud: ###
+### Obtener credenciales del cluster kubernetes en azure y google cloud: ###
 
 * En azure:
 ```
